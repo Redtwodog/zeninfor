@@ -16,6 +16,10 @@ header{
     background: #e79330;
     font-size: 13pt;
 }
+#logo-b{
+    width: 44px;
+    height: 44px;
+}
 .adver-img{
     height: 360px;
     border-bottom:1px solid #d5d5d5;
@@ -118,22 +122,29 @@ header .company-name{
     margin-top: 10%;
 }
 #th-img #img-3{
-    margin-top:18px ;
+
 }
 #th-img .th_img{
     display: block;
     width: 80px;
     margin:0 auto;
-    margin-top: 18%;
-    margin-bottom: 18%;
+    margin-top: 14%;
+    margin-bottom: 14%;
+}
+#th-img .th_img img{
+    width: 80px;
+    height: 80px;
 }
 #th-img dd{
     display:block;
-    margin:5% auto;
+    margin:2% auto;
     width: 200px;
     text-align: center;
     font-size: 11pt;
     color: #717071;
+}
+#th-img .row{
+    padding-left:6%;
 }
 #register-div{
     background: #595757;
@@ -153,6 +164,9 @@ header .company-name{
     border-radius: 10px;
     letter-spacing: 1px;
     font-weight: normal;
+}
+.register-button a{
+    color: #fff;
 }
 #about-us{
     width: 65%;
@@ -174,9 +188,16 @@ footer{
     padding-top: 2%;
 }
 footer img{
+    width: 44px;
+    height: 44px;
     display: block;
     margin-top: 2%;
     margin-left:3%;
+}
+@media screen and (min-width: 769px){
+    #about-us .col-xs-offset-2{
+        margin-left: 3%;
+    }
 }
 /*phone*/
 @media screen and (max-width: 768px){
