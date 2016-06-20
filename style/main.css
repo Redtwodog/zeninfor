@@ -311,4 +311,7 @@ footer img{
         margin-left: 18%;
         margin-top: 3%;
     }
+    #th-img .row{
+        padding-left: 0;
+    }
 }
