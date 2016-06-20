@@ -110,7 +110,6 @@ header .company-name{
     font-size:16pt;
     width: 340px;
     color: #e79330;
-    margin-top: 3%;
 }
 .bottom-sub{
     border-bottom:1px solid #d5d5d5;
@@ -194,6 +193,9 @@ footer img{
     margin-top: 2%;
     margin-left:3%;
 }
+#bottom-modul .bottom-sub{
+    line-height: 108px;
+}
 @media screen and (min-width: 769px){
     #about-us .col-xs-offset-2{
         margin-left: 3%;
@@ -234,9 +236,21 @@ footer img{
         margin: 0 auto;
     }
     #adver-text-log-in{
-        margin-top:10%;
-        width: 85%;
-        height: 216px;
+        line-height: 226px;
+        position: relative;
+        height: 226px;
+        padding-top: 0;
+    }
+    #adver-text-log-in .row{
+        position: absolute;
+        margin: 0 auto;
+        padding-top: 0;
+        line-height: 226px;
+        width: 86%;
+        top: 50%; left: 50%;
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
     }
     #adver-text-log-in .col-md-3{
         width: 100%;
@@ -258,9 +272,6 @@ footer img{
         position: relative;
         top: 30%;
         left: 5%;
-    }
-    .bottom-sub{
-        padding-top: 6%;
     }
     .bottom-sub span{
         text-align: center;
