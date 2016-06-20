@@ -110,7 +110,6 @@ header .company-name{
     font-size:16pt;
     width: 340px;
     color: #e79330;
-    margin-top: 3%;
 }
 .bottom-sub{
     border-bottom:1px solid #d5d5d5;
@@ -194,6 +193,9 @@ footer img{
     margin-top: 2%;
     margin-left:3%;
 }
+#bottom-modul .bottom-sub{
+    line-height: 108px;
+}
 @media screen and (min-width: 769px){
     #about-us .col-xs-offset-2{
         margin-left: 3%;
@@ -258,9 +260,6 @@ footer img{
         position: relative;
         top: 30%;
         left: 5%;
-    }
-    .bottom-sub{
-        padding-top: 6%;
     }
     .bottom-sub span{
         text-align: center;
