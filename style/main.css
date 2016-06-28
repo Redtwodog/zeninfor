@@ -51,11 +51,15 @@ header .company-name{
     letter-spacing: .2em;
 }
 .middle-text{
+    position: absolute;
     display:block;
     width: 260px;
     margin: 0 auto;
     margin-top: 25%;
     font-size: 16pt;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%,0);
 }
 #adver-text dl{
     height: 100%;
@@ -196,13 +200,42 @@ footer img{
 #bottom-modul .bottom-sub{
     line-height: 108px;
 }
+#up-adver-img{
+    padding-left: 0;
+    padding-right: 0;
+}
+#up-adver-img .adver-pic{
+    width: 100%;
+    height: 100%;
+}
 @media screen and (min-width: 769px){
     #about-us .col-xs-offset-2{
         margin-left: 3%;
     }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    #register{
+        display: none;
+    }
+    header .log-in-register{
+        height: 72px;
+    }
+    header .log-in-register span{
+        height: 72px;
+        padding: 0;
+        margin: 0;
+        left: 50%;
+        top: 50%;
+    }
+    .container{
+        overflow: hidden;
+    }
+}
 /*phone*/
-@media screen and (max-width: 768px){
+@media screen and (max-width: 990px){
+    .container{
+        overflow: hidden;
+    }
     #register{
         display: none;
     }
@@ -221,6 +254,13 @@ footer img{
         top: 80%;
         left: 20%;
         margin: 0;
+        z-index: 999;
+        clear: both;
+    }
+    .adver-pic{
+        height: 100%;
+        width: 50%;
+        display: none;
     }
     #adver-text{
         height: 640px;
@@ -324,5 +364,11 @@ footer img{
     }
     #th-img .row{
         padding-left: 0;
+    }
+}
+
+@media screen and (max-width:380px) {
+    #product-name{
+        display: none;
     }
 }
